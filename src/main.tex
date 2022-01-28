@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{seon.jpg} % Profile picture
+
+\cvname{Seon O'Shannon} % Your name
+\cvjobtitle{Software Engineer} % Job title/career
+
+\cvdate{Born: 1996} % Date of birth
+\cvaddress{Reno, NV} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (775) 354-4343} % Phone number
+\cvsite{https://eons.llc} % Personal website
+\cvmail{seon@eons.llc} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Despite being self-taught, programming is so in-line to my way of thinking that people have often considered me a robot; sometimes an alien. I revel in complexity and always love that feeling of ignorance, and the subsequent emotion that comes with understanding. I'm up for any challenge and will take any opportunity to leave this world better than I found it.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{security/4},{Android/1},{Windows/4.5},{Linux/5.5},{Embedded Systems/2},{Cloud Architecture/4},{Python/5},{C++/5.8}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{{Hacker/},{Scientist/},{Manager/}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+I'm interested in working on any difficult problems and learning as much as I can.
+Generally, this includes any kind of engineering and theory of biology through math.
+
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{twenty} % Environment for a short list with no descriptions
+	\twentyitem{2020}{Web Infrastructure}{\href{https://web.infrastructure.tech/architecture/}{https://web.infrastructure.tech/architecture/}}{Globally distributed Kubernetes cluster \& auto-managed WordPress.}
+	\twentyitem{2021}{eons basic build system}{\href{https://github.com/eons-dev/bin\_ebbs}{https://github.com/eons-dev/bin\_ebbs}}{Extensible build system for any language and process, all in python.}
+	\twentyitem{2022}{Mood Recorder}{\href{https://moodrecorder.org}{https://moodrecorder.org}}{App for improving emotional wellness.}
+	\twentyitem{soon}{Biology}{\href{https://github.com/develop-biology}{https://github.com/develop-biology}}{Open source graphical processing.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2015-2019}{Co-founder and Software Engineer for Brain2Bot}{Reno, NV}{Brain2Bot took advantage of novel neuroscience to create a software platform for building brains. We worked on everything from robot pets to video game characters running on Android. The software was all C++ and included a cross-platform gui in Qt.}
+	\twentyitem{2016-2018 }{Secretary \& Performer for the Reno Video Game Symphony}{Reno, NV}{Designed \& implemented organization management logic in the form of a constitution. Filed and was approved for 501(c)(3) status with the IRS. I also played bassoon for the group for many years.}
+	\twentyitem{2017-2021}{Research Associate for ZeaKal}{Reno, NV}{ZeaKal is a biotech company focused on refining \& implementing novel genes into various crops for the purpose of feeding the world as climates change. I worked or advised on nearly all parts of the engineering pipeline, including: designing DNA sequences, transforming plants, growing \& caring for plants, repairing \& maintaining growth chambers \& greenhouses, pest management, tissue sample preparation, and analysis of samples both experimentally and computationally.}
+	\twentyitem{2021-now}{Founder \& CEO of eons LLC}{Reno, NV}{I created eons LLC to be a tech company positioned between science and consumers. We focus on accessibility and user engagement as well as on sustainable designs that automate away maintenance and give our clients more time to spend on their content. By capturing emerging technologies, my team and I have been able to facilitate an array of science-delivery projects and bring new advancements to the public.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2013-2017}{B.S. Biochemistry \& Molecular Biology}{University of Nevada, Reno}{Wrote thesis: "Overexpression of DGAT1 and Modified Cysteine Soy Oleosin Increases Oil Content in the Green Tissue of \textit{Arabidopsis thaliana}", also earned a minor in mathematics.\\GPA: 3.402}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Achievements}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{2014}{Eagle Scout of the Boy Scouts of America}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Other information}
+
+Get the latest version of this resume at \href{https://github.com/eons44/doc\_resume}{https://github.com/eons44/doc\_resume}
+
+\textbf{References are available upon request} (they will not be stored on the public repo).
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 

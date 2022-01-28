@@ -1,0 +1,5 @@
+# EBBS build folder
+build/
+ebbs/
+eons/
+.idea/

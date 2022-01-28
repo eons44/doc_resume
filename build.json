@@ -1,0 +1,30 @@
+{
+  "clear_build_path" : true,
+  "ebbs_next": [
+    {
+      "build": "latex",
+      "copy" : [
+        {"../inc/": "inc/"},
+        {"../src/": "src/"}
+      ],
+      "config" : {
+        "ebbs_next": [
+          {
+            "build": "publish",
+            "build_in": "publish",
+            "run_when": [
+              "release"
+            ],
+            "copy": [
+              {"main.pdf": "resume_seon-o'shannon.pdf"}
+            ],
+            "config": {
+              "clear_build_path": false,
+              "visibility": "public"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
