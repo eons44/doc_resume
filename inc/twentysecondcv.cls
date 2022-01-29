@@ -6,7 +6,7 @@
 %	 REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[sfdefault]{ClearSans}
+%\RequirePackage[sfdefault]{ClearSans}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
@@ -19,6 +19,9 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 \RequirePackage{fontawesome5}
+
+\usepackage[usefilenames,RMstyle={Text,Semibold},SSstyle={Text,Semibold},TTstyle={Text,Semibold}]{plex-otf} %
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -48,7 +51,7 @@
 %----------------------------------------------------------------------------------------
 
 \setlength{\TPHorizModule}{1cm} % Left margin
-\setlength{\TPVertModule}{1cm} % Top margin
+\setlength{\TPVertModule}{0.5cm} % Top margin
 
 \newlength\imagewidth
 \newlength\imagescale
@@ -62,7 +65,7 @@
 	\settowidth{\SectionTitleLength}{\huge #1 }% Calculate the width of the section title
 	\addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
 	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
-	\vspace{8pt}% Whitespace before the section title
+%	\vspace{2pt}% Whitespace before the section title
 	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
 }
 
@@ -130,11 +133,11 @@
 
 		%------------------------------------------------
 
-		{\Huge\color{mainblue}\cvname}
+		{\vspace{-1cm}\Huge\color{mainblue}\cvname}
 
 		%------------------------------------------------
 
-		{\Large\color{black!80}\cvjobtitle}
+		{\Large\color{black!80}\cvjobtitle\vspace{0.25cm}}
 
 		%------------------------------------------------
 
@@ -146,6 +149,7 @@
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon{globe}}} & \href{\cvsite}{\cvsite}\\}
 			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{calendar-day}}} & \cvdate}
 		\end{tabular}
+		\vspace{0.25cm}
 
 		%------------------------------------------------
 		
@@ -155,6 +159,7 @@
 				\aboutme
 			\end{flushleft}
 		}
+		\vspace{0.25cm}
 
 		%------------------------------------------------
 
@@ -163,7 +168,7 @@
 		\skills
 		\skillstext
 		\scriptsize
-		(*)[The skill scale represents confidence over perceived possible growth.]
+		(*)[The skill scale represents confidence over perceived possible growth]
 			
 		%------------------------------------------------
 			
@@ -176,7 +181,7 @@
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){\,#1\,};%
+	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=2.0pt, minimum size=6.4mm, text height=3.6mm, fill=#2,#2,text=white](char){\,#1\,};%
 }
 
 \newcounter{colorCounter}
@@ -259,6 +264,6 @@
 %	 MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.6cm,top=0.0cm,right=1cm,bottom=0.0cm,nohead,nofoot]{geometry}
 
 \RequirePackage{hyperref}
