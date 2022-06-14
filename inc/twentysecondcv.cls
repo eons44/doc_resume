@@ -1,3 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \ProvidesClass{twentysecondcv}[2017/01/08 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
@@ -19,6 +37,7 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 \RequirePackage{fontawesome5}
+\RequirePackage{fontspec}
 
 \usepackage[usefilenames,RMstyle={Text,Semibold},SSstyle={Text,Semibold},TTstyle={Text,Semibold}]{plex-otf} %
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
@@ -122,18 +141,18 @@
 			
 		%------------------------------------------------
 		
-		\ifthenelse{\equal{\profilepic}{}}{}{
-			\begin{center}
-				\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
-					\clip (600/2, 567/2) circle (567/2);
-					\node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\profilepic}};
-				\end{tikzpicture}
-			\end{center}
-		}
+		% \ifthenelse{\equal{\profilepic}{}}{}{
+		% 	\begin{center}
+		% 		\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
+		% 			\clip (600/2, 567/2) circle (567/2);
+		% 			\node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\profilepic}};
+		% 		\end{tikzpicture}
+		% 	\end{center}
+		% }
 
 		%------------------------------------------------
 
-		{\vspace{-1cm}\Huge\color{mainblue}\cvname}
+		{\vspace{0.3cm}\Huge\color{mainblue}\cvname}
 
 		%------------------------------------------------
 
@@ -146,8 +165,8 @@
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{envelope}}} & \href{mailto:\cvmail}{\cvmail}\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{phone}}} & \cvnumberphone\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{map-marker-alt}}} & \cvaddress\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon{globe}}} & \href{\cvsite}{\cvsite}\\}
-			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{calendar-day}}} & \cvdate}
+			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon{globe}}} & \href{\cvsite}{\cvsite}}
+			% \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{calendar-day}}} & \cvdate}
 		\end{tabular}
 		\vspace{0.25cm}
 

@@ -1,20 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Twenty Seconds Resume/CV
-% LaTeX Template
-% Version 1.1 (8/1/17)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
-% Vel (vel@LaTeXTemplates.com)
-%
-% License:
-% The MIT License (see included LICENSE file)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
@@ -27,12 +10,10 @@
 
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\profilepic{seon.jpg} % Profile picture
-
+% \profilepic{seon.jpg} % Profile picture
 \cvname{Seon O'Shannon} % Your name
-\cvjobtitle{\normalsize{\centerline{Developer | Scientist | Manager}}} % Job title/career
+\cvjobtitle{\normalsize{\centerline{Developer | Manager}}} % Job title/career
 
-\cvdate{Born: 1996} % Date of birth
 \cvaddress{Reno, NV} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{+1 (775) 354-4343} % Phone number
 \cvsite{https://eons.llc} % Personal website
@@ -46,14 +27,27 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
+\aboutme{From biotechnology to de novo AI to custom clouds to business, my breadth of experience allows me to easily cross disciplines and move ideas from theory into practice. Getting into the weeds of how systems work and learning what I can do to improve them is one of my great joys. It doesn't matter if I have to learn a new programming language, backdoor a broken server, design hardware, build new organisms, or change whole ecosystems, I'm up for any challenge and will take any opportunity to leave this world better than I found it.}
 
-\aboutme{From biotechnology to AI from scratch to cloud-based website development, my breadth of experience allows me to easily cross disciplines and move ideas from theory into practice. I'm up for any challenge and will take any opportunity to leave this world better than I found it.}
 %----------------------------------------------------------------------------------------
 %	 SKILLS
 %----------------------------------------------------------------------------------------
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{{\textbf{Experiment Design \& Debugging}/5.3},{\textbf{Security}/4},{\textbf{Version Control + CI/CD}/3},{\textbf{Android}/1},{\textbf{Windows}/4.5},{\textbf{Linux}/5.5},{\textbf{Embedded Systems}/2},{\textbf{Cloud Architecture}/4},{\textbf{Python}/5},{\textbf{C++}/5.8},{\texbf{Leadership}/3.8}}
+\skills{%
+	{\textbf{Experiment Design \& Debugging}/5.3},%
+	{\textbf{Security}/4},%
+	{\textbf{Version Control + CI/CD}/3},%
+	{\textbf{Android}/1},%
+	{\textbf{Windows}/4.5},%
+	{\textbf{Linux}/5.5},%
+	{\textbf{Hardware \& Electrical Engineering}/2},%
+	{\textbf{Embedded Systems}/2.3},%
+	{\textbf{Cloud Architecture}/4},%
+	{\textbf{Python}/5},%
+	{\textbf{C++}/5.8},%
+	{\textbf{Leadership}/3.8}%
+}
 
 %------------------------------------------------
 
@@ -75,40 +69,24 @@
 
 
 %----------------------------------------------------------------------------------------
-%	 OTHER INFORMATION
-%----------------------------------------------------------------------------------------
-
-\section{Latest}
-
-Get the latest version of this resume at \href{https://github.com/eons44/doc\_resume}{https://github.com/eons44/doc\_resume}\\
-\textbf{References are available upon request} (they will not be stored on the public repo).
-
-%----------------------------------------------------------------------------------------
-%	 PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Projects}
-
-\begin{twenty} % Environment for a short list with no descriptions
-	\twentyitem{2020-now}{Web Infrastructure}{\href{https://web.infrastructure.tech/architecture/}{https://web.infrastructure.tech/architecture/}}{Globally distributed Kubernetes cluster \& auto-managed WordPress.}
-	\twentyitem{2021-now}{Eons Basic Build System}{\href{https://github.com/eons-dev/bin\_ebbs}{https://github.com/eons-dev/bin\_ebbs}}{Extensible build system for any language and process, all in Python.}
-	\twentyitem{2021-2022}{Mood Recorder}{\href{https://moodrecorder.org}{https://moodrecorder.org}}{Progressive Web App for improving emotional health.}
-	\twentyitem{current}{Develop Biology}{\href{https://develop,bio}{https://develop.bio}}{Open source, backwards compatible, recursive hypergraph with reflection and a frontend as my own programming language.}
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
-
-
-%----------------------------------------------------------------------------------------
 %	 EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2015-2019}{Co-founder and Software Engineer}{Brain2Bot}{Brain2Bot leveraged novel neuroscience into a software platform for building brains. We worked on everything from robot pets to Unreal games for mobile. The software was all C++ and included a cross-platform gui in Qt.}
-	\twentyitem{2017-2021}{Research Associate}{Zeakal}{ZeaKal aims to use its patented genes to feed the world as climates change. I worked or advised on nearly all parts of the genetic engineering pipeline, including: designing DNA, transforming \& growing plants, repairing \& maintaining growth chambers \& greenhouses, pest management, tissue sample preparation, and analysis of samples both experimentally and computationally.}
-	\twentyitem{2020-now}{Founder \& CEO}{eons LLC}{I created eons LLC to facilitate communication between researchers and the public. My team and I create sustainable scaffolds from emerging technologies and help bring new discoveries to the world.}
-	\twentyitem{2021-now}{CTO}{AOE Greens}{AOE Greens promises to be the future of farmland. By utilizing innovations across disciplines, AOE Greens is positioned to build the best of tech, agriculture, and cutting-edge science.}
+	\twentyitem{2015-2019}{Lead Software Engineer}{\textbf{Brain2Bot}}{%
+		Using C++, Qt, and novel neuroscience I designed, developed, and deployed a software platform for building brains. I wrote drivers and wired together off-the-shelf hardware to create robot pets which responded to stimuli in real time, leaned from their experience, and had their own internal emotions and goals. Later I deployed the same software through Unreal Engine targeting both Windows and Android.%
+	}
+	\twentyitem{2017-2021}{Research Associate}{\textbf{Zeakal}}{%
+		I worked on nearly all parts of a genetic engineering pipeline as well as managed other personnel, equipment, greenhouses, labs, and reagents. I wrote and mathematically verified software for automating the digestion of experimental data, enabling faster time-to-results across numerous studies. For collaboration with our global team, I built and hosted data servers for research results.%
+	}
+	\twentyitem{2020-now}{Founder \& CEO}{\textbf{eons LLC}}{%
+		With my team, I manage both customer and vendor relations, planning and implementation of new technologies, and training of employees. I also maintain \& secure a globally distributed, production-grade Kubernetes system which my clients rely on.%
+	}
+	\twentyitem{2021-now}{CTO}{\textbf{AOE Greens}}{%
+		With AOE Greens, I've designed and built fully integrated, custom IoT solutions. The CEO and I collaborated on hardware design, wired everything ourselves, and trained our employees on how to use the systems we built. I provided custom software and cloud infrastructure for controlling our hardware through a secure web interface. We have plans to scale these solutions and use my AI framework to optimize the growth of plants: providing food security in a changing climate!%
+	}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -135,27 +113,27 @@ Get the latest version of this resume at \href{https://github.com/eons44/doc\_re
 	\twentyitem{2016}{Secretary \& Director}{Reno Video Game Symphony}{Designed \& implemented a constitution for the Reno Video Game Symphony to become a 501(c)(3) nonprofit.}
 \end{twenty}
 
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects By Release Date}
+
+\begin{twenty} % Environment for a short list with no descriptions
+	\twentyitem{2020}{Web Infrastructure}{\href{https://web.infrastructure.tech/architecture/}{https://web.infrastructure.tech/architecture/}}{Globally distributed Kubernetes cluster \& auto-managed WordPress.}
+	\twentyitem{2021}{Eons Basic Build System}{\href{https://github.com/eons-dev/bin\_ebbs}{https://github.com/eons-dev/bin\_ebbs}}{Extensible build system for any language and process, all in Python.}
+	% \twentyitem{2021-2022}{Mood Recorder}{\href{https://moodrecorder.org}{https://moodrecorder.org}}{Progressive Web App for improving emotional health.}
+	\twentyitem{in progress}{Develop Biology}{\href{https://develop,bio}{https://develop.bio}}{Open source, backwards compatible, recursive hypergraph with reflection and a frontend as my own programming language.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
 
 %----------------------------------------------------------------------------------------
-%	 SECOND PAGE EXAMPLE
+%	 OTHER INFORMATION
 %----------------------------------------------------------------------------------------
 
-%\newpage % Start a new page
+\section{Latest}
 
-%\makeprofile % Print the sidebar
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%----------------------------------------------------------------------------------------
+Get the latest version of this resume at \href{https://github.com/eons44/doc\_resume}{https://github.com/eons44/doc\_resume}
+\textbf{References are available upon request} (they will not be stored on the public repo).
 
 \end{document} 
