@@ -1,6 +1,6 @@
 {
   "clear_build_path" : true,
-  "ebbs_next": [
+  "next": [
     {
       "build": "latex",
       "copy" : [
