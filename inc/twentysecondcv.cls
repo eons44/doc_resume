@@ -38,6 +38,7 @@
 \RequirePackage{parskip}
 \RequirePackage{fontawesome5}
 \RequirePackage{fontspec}
+\usepackage[none]{hyphenat}
 
 \usepackage[usefilenames,RMstyle={Text,Semibold},SSstyle={Text,Semibold},TTstyle={Text,Semibold}]{plex-otf} %
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
