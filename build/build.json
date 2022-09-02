@@ -1,11 +1,14 @@
 {
+  "name": "resume",
+  "type": "doc",
+  "build_in": "tmp",
   "clear_build_path" : true,
   "next": [
     {
       "build": "latex",
       "copy" : [
-        {"../inc/": "inc/"},
-        {"../src/": "src/"}
+        {"../../inc/": "inc/"},
+        {"../../src/": "src/"}
       ],
       "config" : {
         "ebbs_next": [

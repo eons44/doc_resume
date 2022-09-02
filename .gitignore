@@ -1,5 +1,6 @@
-# EBBS build folder
-build/
-ebbs/
-eons/
-.idea/
+#build
+build/**/
+!/build/config/
+
+#intellij
+/.idea/
