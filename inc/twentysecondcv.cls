@@ -157,7 +157,7 @@
 
 		%------------------------------------------------
 
-		{\Large\color{black!80}\cvjobtitle\vspace{0.25cm}}
+		{\Large\color{black!80}\cvjobtitle\vspace{0.05cm}}
 
 		%------------------------------------------------
 
@@ -169,7 +169,7 @@
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon{globe}}} & \href{\cvsite}{\cvsite}}
 			% \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\textcolor{mainblue}{\Large\faIcon[solid]{calendar-day}}} & \cvdate}
 		\end{tabular}
-		\vspace{0.25cm}
+		\vspace{0.05cm}
 
 		%------------------------------------------------
 		
@@ -179,16 +179,16 @@
 				\aboutme
 			\end{flushleft}
 		}
-		\vspace{0.25cm}
+		\vspace{0.15cm}
 
 		%------------------------------------------------
 
-		\profilesection{Skills}
+		\profilesection{Skills*}
 
 		\skills
 		\skillstext
 		\scriptsize
-		(*)[The skill scale represents confidence over perceived possible growth]
+		*Confidence over perceived growth
 			
 		%------------------------------------------------
 			
