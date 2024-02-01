@@ -153,7 +153,7 @@
 
 		%------------------------------------------------
 
-		{\vspace{0.3cm}\Huge\color{mainblue}\cvname}
+		{\begin{center}\vspace{0.3cm}\huge\color{mainblue}\cvname\end{center}}
 
 		%------------------------------------------------
 
